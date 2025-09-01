@@ -1,0 +1,56 @@
+---
+title: "The Workspace"
+description: "The Workspace is the top-level unit, it is the organization that the Super Admin (Owner) manages. Admins can modify things about the Workspace."
+---
+
+# Workspace details
+
+The Admin has the ability to change parameters such as
+
+- Workspace name,
+- Workspace Icon
+- Workspace URL (in the future the URL but it does not make sense right now with our set-up)
+
+The Admin can view
+
+- The Region will be shown (Read-only)
+
+The Superadmin (Owner) will have the ability to delete a workspace but this won't be done for the first release
+
+# Workspace architecture
+
+A Workspace has
+
+- a set of members
+- a set of projects
+- a set of assets
+- a set of configuration and rules (Security and access, configuration of teams etc…)
+- a service plan (Free trial, Enterprise etc…)
+- a billing details (the details to put on the Invoice)
+- usage analytics (we will make this visible to the Admin)
+
+# Members (People)
+
+A dedicated page will be done for managing Members
+
+Members
+
+On top of managing members manually, we will have the ability to
+
+- Create an invite link to add members to the workspace
+- Add members via a connection to Google, Slack (or something else)
+
+A member can be added manually by click on Add members
+
+## Invite Members
+
+There are two ways to Invite members
+
+→ Share the Invite Link (if enabled in the Members section)
+
+→ Share with the Invite Pop-up (see below)
+
+The Invite Members pop-up will require a
+
+- adding emails (separated with commas)
+- selecting a role (by default people are added as Admin)

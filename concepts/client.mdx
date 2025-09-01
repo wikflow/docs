@@ -1,0 +1,48 @@
+---
+title: "A client"
+description: "The Workspace user can either receive work from a client who is on the Wikio platform or from a client who is not on the Wikio platform. At the beginning, the most common case is that the workspace owner receives a task from a client which has no idea about Wikio."
+---
+
+## Client typical workflow
+
+**Context**: Client B does not know about Wikio. They don’t change anything in their day to day process
+
+- The User A in Workspace A receives a work package from a Client B via email. The User A can forward the client email with all the instructions to the Wikio dedicated email address that will parse and enter all the details (second phase)
+- The User A creates a Project 01 and creates the Client B entry in the Workspace. To create the client entry, the user can enter a name, and the email of the main contact. The domain name of the contact is used to retrieve the logo (favicon) and potentially other data points.
+- The User A uploads and assigns all the relevant content to Project 01
+- The User A works on the Project 01 (subtitle or whatever)
+- When he is happy, he shares the result (Release Candidate 1) to Client B. At this stage, the User is asked to confirm the email address of the main client. The user can also copy the address of the Release candidate. There is a preview function for the User to see what the Client will actually see.
+- The Client B receives an email with the link to the Release candidate. The link is branded with the workspace owner brand and name with a URL that looks like https://show.wikio.ai/ideepix/rc/0x34ZqfE4ZgD0293Ere (the name of the workspace owner is clearly in the URL)
+- The Client B can review the content and make comment directly with their interface. They can download the asset.
+- The User A can decide to close the project if the Client B has accepted the release candidate.
+
+In case of a bulk download (work package composed of a dozens of files) we might have to think about the process differently. To review.
+
+## Client review (show.wikio.ai)
+
+## Client list
+
+The Client list would look have some similarities with the Members and the Projects screen.
+
+We should have a filter, a sorting function and a \+ new Client button.
+
+Company  - Main contact email - Website - Last interaction - Projects  - Active project
+
+We would have the icon of the company and its name, the email of the main contact, the website address, the date of the last interaction, the number of project and a list of active projects (clickable)
+
+## New client
+
+- Client name
+- Domain name
+- Email for main contact (that will be used to create the kind of “internal social network”, i.e. to recognize that a user is already on the platform)
+
+The company icon will be automatically found from the domain name (favicon.ico)
+
+## Client item
+
+- Icon - Name - Ability to “Favorite”
+- Activity
+- List of projects with the client
+- Client Brand guidelines (that would be refreshed regularly - we might offer a way for companies to make sure that their brand is always up to date for all their suppliers)
+
+We will allow the user to resend an email to the client to validate a project or anything related to it.
