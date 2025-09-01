@@ -1,0 +1,36 @@
+---
+title: "The User"
+---
+
+## User workspace roles
+
+A user can have a single role within a given Workspace
+
+- **Workspace Owner:** The person who manages billing and can add or remove Admins. There’s a single owner of a Workspace. A owner can decide to give this role to somebody else. (Ownership transfer)
+- **Workspace Admins**: Can create new teams and remove members from the workspace. A workspace can have multiple admins.
+- **Workspace Members**: Can create projects, invite other members, and work on projects but cannot create teams. A workspace can have multiple members.
+- **Workspace Guests:** A person invited to work in a team but cannot invite others. This person is not part of the organization (they are an external collaborator). A workspace can have multiple guests.
+
+Please note
+
+- The way we recognize members is from the domain name (same as owner)
+- The Owner can decide to remove the ability of the Workspace to have Guests. By default, the ability to have guests is enabled.
+- The first user of a workspace is the Owner
+
+## User project functions
+
+Inside a project, a user can have a specific function.
+
+- **Project Lead** : the project “manager”. A project has a single lead. A user can be the lead for a particular project and a simple workers on other project. This is not a role, this is just a function related to particular project.
+- **Project member**: somebody actively working on the project
+- **Project reviewer**: somebody that can approve the work but cannot edit (and create a mess 😃)
+
+## User service status
+
+A user can be in a number of states, allowing them to either connect, access the service etc…
+
+- **Hollow** : a User can be in this state where they have been invited by someone but have not yet created their account - no password being set yet. This is almost just like an email address. A User can also be in this state if they have just entered their email and not validated it.
+- **Pending** : a User in Pending state is a User who has created their credentials (email and password, or the SSO) but have not created or joined a Workspace yet. When they are in Pending state, they cannot do anything except joining a Workspace. This is why the first screen that a User in Pending state would see if the Screen to Join (or Create) a Workspace.
+- **Active** : a User is Active when they have joined a Workspace and they are can do anything on this workspace that is allowed by their Workspace Role.
+- **Disabled** : a User is Disabled when an Admin has removed access to them. They are no longer able to do anything on the platform. They can re-activated at any time. Typically, this is what will happen when an Owner wants to save money and check that some users have left projects and no longer using the tool. The Personal Data such as name, profile picture remain on the system when a User is in state.
+- **Deleted** : a User is Deleted when the Personal Data of the User has been removed.
