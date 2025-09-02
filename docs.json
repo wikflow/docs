@@ -33,9 +33,7 @@
             "group": "Administration",
             "pages": [
               "3-administration/workspace",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "3-administration/billing"
             ]
           },
           {
