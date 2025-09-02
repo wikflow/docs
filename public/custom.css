@@ -18,6 +18,8 @@ main, .prose, .markdown, .content, article {
   line-height: 1.6;
 }
 
+body { background: pink !important; }
+
 /* Headings – keep contrast while slightly smaller than defaults */
 .prose h1, article h1 { font-size: var(--wk-h1); line-height: 1.2; }
 .prose h2, article h2 { font-size: var(--wk-h2); margin-top: 1.6em; }
