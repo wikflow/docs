@@ -43,18 +43,22 @@
             "group": "Administration",
             "pages": [
               "admin/workspace",
-              "admin/billing"
+              "admin/billing",
+              "admin/members"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/search",
+              "features/video-player"
             ]
           },
           {
             "group": "Concepts",
             "pages": [
               "concepts/user",
-              "concepts/workspace",
-              "concepts/project",
-              "concepts/team",
-              "concepts/workflow",
-              "concepts/client"
+              "concepts/workspace"
             ]
           },
           {
