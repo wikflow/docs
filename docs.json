@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "willow",
   "name": "Wikio AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4A5C9D",
+    "light": "#FFFFFF",
+    "dark": "#1E1F2B"
   },
   "favicon": "/favicon.svg",
   "navigation": {
