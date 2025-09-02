@@ -51,13 +51,19 @@
           {
             "group": "Concepts",
             "pages": [
-              "index",
               "4-concepts/user",
               "4-concepts/workspace",
               "4-concepts/project",
               "4-concepts/team",
               "4-concepts/workflow",
               "4-concepts/client"
+            ]
+          },
+                    {
+            "group": "Troubleshootinh",
+            "pages": [
+              "5-troubleshooting/common-issues",
+              "5-troubleshooting/report"
             ]
           }
         ]
