@@ -29,7 +29,7 @@
               "index",
               "welcome/start-guide",
               "welcome/concepts",
-              "about/changelogs"
+              "changelog/index"
             ]
           },
           {
@@ -37,12 +37,7 @@
             "pages": [
               "account/profile",
               "account/preferences",
-              "account/notifications"
-            ]
-          },
-          {
-            "group": "Administration",
-            "pages": [
+              "account/notifications",
               "admin/workspace",
               "admin/billing",
               "admin/members"
