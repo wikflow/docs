@@ -11,14 +11,12 @@
   "navigation": {
     "anchors": [
       {
-        "anchor": "Wikio App",
-        "href": "https://app.wikio.ai",
-        "icon": "app"
+        "label": "Wikio App",
+        "href": "https://app.wikio.ai"
       },
       {
-        "anchor": "Support",
-        "href": "mailto:support@wikio.ai",
-        "icon": "email"
+        "label": "Support",
+        "href": "mailto:support@wikio.ai"
       }
     ],
     "tabs": [
@@ -29,41 +27,41 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "1-getting-started/start-guide",
-              "1-getting-started/concepts"
+              "welcome/start-guide",
+              "welcome/concepts"
             ]
           },
           {
             "group": "Account",
             "pages": [
-              "2-account/profile",
-              "2-account/preferences",
-              "2-account/notifications"
+              "account/profile",
+              "account/preferences",
+              "account/notifications"
             ]
           },
           {
             "group": "Administration",
             "pages": [
-              "3-administration/workspace",
-              "3-administration/billing"
+              "admin/workspace",
+              "admin/billing"
             ]
           },
           {
             "group": "Concepts",
             "pages": [
-              "4-concepts/user",
-              "4-concepts/workspace",
-              "4-concepts/project",
-              "4-concepts/team",
-              "4-concepts/workflow",
-              "4-concepts/client"
+              "concepts/user",
+              "concepts/workspace",
+              "concepts/project",
+              "concepts/team",
+              "concepts/workflow",
+              "concepts/client"
             ]
           },
-                    {
+          {
             "group": "Troubleshooting",
             "pages": [
-              "5-troubleshooting/common-issues",
-              "5-troubleshooting/report"
+              "issues/common-issues",
+              "issues/report"
             ]
           }
         ]
@@ -89,7 +87,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/wikioai",
+      "twitter": "https://x.com/wikioai",
       "github": "https://github.com/wikioai",
       "linkedin": "https://linkedin.com/company/wikioai"
     }
