@@ -51,7 +51,7 @@
         ]
       }
     ],
-    "global": {
+    "footer": {
       "anchors": [
         {
           "anchor": "Documentation",
