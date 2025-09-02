@@ -17,21 +17,22 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "1-getting-started/start-guide",
+              "1-getting-started/concepts"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Account",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "2-account/profile",
+              "2-account/preferences",
+              "2-account/notifications"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Administration",
             "pages": [
-              "essentials/markdown",
+              "3-administration/workspace",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
