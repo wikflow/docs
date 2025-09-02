@@ -37,6 +37,18 @@
               "essentials/images",
               "essentials/reusable-snippets"
             ]
+          },
+          {
+            "group": "Concepts",
+            "pages": [
+              "index",
+              "4-concepts/user",
+              "4-concepts/workspace",
+              "4-concepts/project",
+              "4-concepts/team",
+              "4-concepts/workflow",
+              "4-concepts/client"
+            ]
           }
         ]
       }
@@ -69,7 +81,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@wikio.ai"
+        "href": "mailto:support@wikio.ai"
       }
     ],
     "primary": {
