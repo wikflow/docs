@@ -55,7 +55,7 @@
             "pages": [
               "concepts/user",
               "concepts/workspace",
-              "concepts/asset"
+              "concepts/item"
             ]
           },
           {
@@ -71,17 +71,17 @@
   "global": {
     "anchors": [
       {
-        "anchor": "Documentation",
+        "label": "Documentation",
         "href": "https://docs.wikio.ai",
         "icon": "book-open-cover"
       },
       {
-        "anchor": "Community",
+        "label": "Community",
         "href": "https://wikio.ai/community",
         "icon": "slack"
       },
       {
-        "anchor": "Release notes",
+        "label": "Release notes",
         "href": "/changelog",
         "icon": "newspaper"
       }
@@ -112,6 +112,6 @@
     }
   },
   "styles": {
-  "css": "/custom.css"
-}
+    "css": "/custom.css"
+  }
 }
