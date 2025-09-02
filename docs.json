@@ -9,9 +9,21 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "anchors": [
+      {
+        "anchor": "Wikio App",
+        "href": "https://app.wikio.ai",
+        "icon": "app"
+      },
+      {
+        "anchor": "Support",
+        "href": "mailto:support@wikio.ai",
+        "icon": "email"
+      }
+    ],
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting started",
@@ -50,26 +62,7 @@
           }
         ]
       }
-    ],
-    "footer": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://docs.wikio.ai",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://wikio.ai/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://wikio.ai/blog",
-          "icon": "blog"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
