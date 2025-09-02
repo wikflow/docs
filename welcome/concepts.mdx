@@ -1,69 +1,80 @@
 ---
 title: "Concepts"
-description: "Core building blocks of Wikio"
+description: "Core building blocks of Wikio. Learn how users, workspaces, teams, projects, clients, items, workflows, folders, and collections fit together."
 sidebarTitle: "Concepts"
 mode: "wide"
 icon: "lightbulb"
-keywords: ['concepts', 'knowledge', 'architecture']
+keywords: ['concepts', 'knowledge', 'architecture', 'user', 'workspace', 'project', 'team', 'workflow']
 ---
 
-Wikio is organized around a set of core concepts. Understanding these will help you navigate the platform and structure your work effectively.
+Wikio is organized around a set of core concepts. Understanding these will help you navigate the platform and structure your work.
+
+## Quick overview
+
+<Columns cols={3}>
+  <Card title="User" icon="user" href="/concepts/user">
+    The individual who signs in, has a profile, and personal settings.
+  </Card>
+  <Card title="Workspace" icon="building" href="/concepts/workspace">
+    The organization that owns billing, members, and data.
+  </Card>
+  <Card title="Team" icon="users" href="/concepts/team">
+    A group of people who collaborate on shared work.
+  </Card>
+
+  <Card title="Project" icon="layers" href="/concepts/project">
+    The unit of production from brief to master release.
+  </Card>
+  <Card title="Client" icon="briefcase" href="/concepts/client">
+    The external party for whom the work is delivered.
+  </Card>
+  <Card title="Item" icon="file-video" href="/concepts/item">
+    A media asset such as a video or audio file.
+  </Card>
+
+  <Card title="Workflow" icon="settings" href="/concepts/workflow">
+    A sequence of automated steps like transcript or subtitle.
+  </Card>
+  <Card title="Folders" icon="folder" href="/concepts/folders">
+    Input and output locations that automate recurring work.
+  </Card>
+  <Card title="Collections" icon="library" href="/concepts/collections">
+    Shared libraries of videos searchable across the workspace.
+  </Card>
+</Columns>
 
 ## User
-A **user** is an individual interacting with Wikio.  
-In the B2B context, every user belongs to an organization. Even solo users are tied to a company account for billing purposes.
+A **user** is an individual interacting with Wikio. In the B2B context, every user belongs to an organization. Even solo users are tied to a company account for billing.  
+[Read more](/concepts/user)
 
 ## Workspace
-A **workspace** represents an organization. It includes:  
-- Company billing details (VAT ID, address, payment information)  
-- A set of members and guests  
-- All projects, assets, and workflows belonging to the organization  
-
-The workspace is the entity that receives invoices and manages subscriptions.
+A **workspace** represents an organization. It includes billing details, a set of members and guests, and all projects, assets, and workflows for that company. The workspace receives invoices and manages subscriptions.  
+[Read more](/concepts/workspace)
 
 ## Team
-A **team** is a group of users collaborating on one or more projects.  
-- A user can belong to multiple teams.  
-- External collaborators can be invited, which may impact billing.  
+A **team** is a group of users collaborating on one or more projects. A user can belong to multiple teams. External collaborators can be invited and may affect billing.  
+[Read more](/concepts/team)
 
 ## Project
-A **project** is the main unit of production.  
-Projects typically move from:  
-1. **Raw assets** (rushes, footage)  
-2. **Release candidates** (draft versions)  
-3. **Master release** (final video, in multiple formats for TV, web, or social)  
-
-Each project contains:  
-- A project brief  
-- A timeline  
-- Potentially thousands of media files  
-- An associated client (internal or external)  
+A **project** moves from raw assets to release candidates to a master release in various formats. It holds the brief, timeline, many media files, and a linked client.  
+[Read more](/concepts/project)
 
 ## Client
-A **client** is the external party that commissions or receives the final project deliverable.  
+A **client** is the external party that commissions or receives the final deliverable.  
+[Read more](/concepts/client)
 
-## Item (Asset)
-An **item** (or asset) is a raw media file such as video footage.  
-- Items usually belong to one project but can be reused across projects.  
-- Once published, items become searchable and available for analytics.  
+## Item
+An **item** is a media asset such as video footage. Items usually belong to one project but can be reused. Once published, items are searchable and available for analytics.  
+[Read more](/concepts/item)
 
 ## Workflow
-A **workflow** is a sequence of automated operations applied to media. Examples:  
-- Transcription  
-- Subtitling  
-- Translation  
-- Detecting forbidden words  
-- Suggesting scene cuts for time limits  
+A **workflow** is a set of automated operations applied to media, such as transcription, subtitling, translation, detecting forbidden words, or suggesting scene cuts.  
+[Read more](/concepts/workflow)
 
 ## Folders
-**Folders** can be used to automate recurring workflows.  
-- Files dropped into an input folder are processed automatically.  
-- Results appear in the output folder.  
-- APIs are available for deeper integration.  
+**Folders** help automate recurring work. Files dropped into an input folder are processed and results appear in the output folder. APIs are available for deeper integration.  
+[Read more](/concepts/folders)
 
 ## Collections
-**Collections** are shared video libraries defined at the workspace level.  
-- They can be made visible to all members, e.g., for training purposes.  
-- Collections are searchable with AI-generated tags (e.g., “leadership under pressure,” “ERP setup”).  
-
----
+**Collections** are shared video libraries at the workspace level. They can be visible to all members and support AI generated tags for search.  
+[Read more](/concepts/collections)
