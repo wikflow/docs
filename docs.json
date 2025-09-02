@@ -28,7 +28,8 @@
             "pages": [
               "index",
               "welcome/start-guide",
-              "welcome/concepts"
+              "welcome/concepts",
+              "about/changelogs"
             ]
           },
           {
