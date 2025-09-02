@@ -29,7 +29,7 @@
               "index",
               "welcome/start-guide",
               "welcome/concepts",
-              "changelog/index"
+              "changelog/latest"
             ]
           },
           {
@@ -91,5 +91,9 @@
       "github": "https://github.com/wikioai",
       "linkedin": "https://linkedin.com/company/wikioai"
     }
-  }
+  },
+  "redirects": [
+    { "source": "/changelog", "destination": "/changelog/1-0" },
+    { "source": "/changelog/latest", "destination": "/changelog/1-0" }
+  ]
 }
