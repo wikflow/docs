@@ -110,5 +110,8 @@
       "github": "https://github.com/wikioai",
       "linkedin": "https://linkedin.com/company/wikioai"
     }
-  }
+  },
+  "styles": {
+  "css": "/custom.css"
+}
 }
