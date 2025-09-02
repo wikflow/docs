@@ -1,10 +1,122 @@
 ---
 title: "Add a member"
-description: "Understand Wikio billing, available plans, and how charges are calculated for members and workspaces."
+description: "Invite and manage members in your workspace. Send email invites, allow company domains, or share a secure join link."
 sidebarTitle: "Add a member"
 mode: "wide"
-icon: "user-plus"
-keywords: ['users', 'members', 'member', 'add a member', 'workspace members']
+icon: "users"
+keywords: ['members', 'invite', 'workspace', 'roles', 'approved domains', 'invite link', 'billing']
 ---
+
+Invite and manage members of your workspace.
+
+## Send an invitation
+
+<Steps>
+  <Step title="Open Members">
+    Go to **Settings → Administration → Members**.
+  </Step>
+  <Step title="Click Invite">
+    Select **Invite** to open the invite dialog.
+  </Step>
+  <Step title="Enter email addresses">
+    Add one or more emails. Separate multiple addresses with commas.
+  </Step>
+  <Step title="Choose role">
+    Pick the role the invitees will have when they join the workspace.
+  </Step>
+  <Step title="Select auto access (optional)">
+    Choose default access, such as which assets or folders they should see first.
+  </Step>
+  <Step title="Send invites">
+    Click **Send invites**. New members receive an email with a link and steps to join.
+  </Step>
+</Steps>
+
+<Callout type="info">
+If your mail server filters invitations, add **notifications@wikio.ai** and **no-reply@wikio.ai** to your allow list.
+</Callout>
+
+## Who can invite
+
+- Workspace owners and admins can invite new members by default  
+- Owners can restrict who can invite from **Settings → Administration → Members → Permissions**  
+- Learn how adding or removing members affects billing in [Billing and plans](/admin/billing)
+
+## Approved email domains
+
+Let people with your company domain join without a manual invite.
+
+<Steps>
+  <Step title="Open Security">
+    Go to **Settings → Administration → Security**.
+  </Step>
+  <Step title="Add allowed domain">
+    Add one or more domains, for example **example.com**.
+  </Step>
+  <Step title="Save">
+    People who sign up with a matching address can join the workspace directly.
+  </Step>
+</Steps>
+
+Notes
+
+- This streamlines joining but does not stop users from creating separate workspaces with the same domain  
+- Review the domain list regularly to keep it up to date  
+- If you transfer or retire a domain, remove it from the allowed list to prevent unwanted access
+
+## Invite link
+
+Generate a unique link that lets people join without entering emails one by one.
+
+<Steps>
+  <Step title="Open Security">
+    Go to **Settings → Administration → Security**.
+  </Step>
+  <Step title="Generate link">
+    Create an invite link and copy it.
+  </Step>
+  <Step title="Share carefully">
+    Share the link only inside your organization.
+  </Step>
+  <Step title="Disable when done">
+    You can revoke the link at any time from the same screen.
+  </Step>
+</Steps>
+
+## Invite and assign
+
+You can prepare access for invitees before they accept.
+
+- Set them as reviewers on selected items  
+- Subscribe them to workflows so they receive task updates  
+- Add them to notification rules for assets they will follow
+
+After they join, their assignments and subscriptions are active.
+
+## Manage members
+
+From **Settings → Administration → Members** you can:
+
+- Change a member role  
+- Remove a member  
+- Resend an invitation  
+- Filter by status: active, pending, suspended
+
+## Troubleshooting
+
+- **Invite not received**  
+  Ask the invitee to check spam or quarantine and allow emails from **wikio.ai**  
+- **Invite link shared too widely**  
+  Revoke the link and generate a new one, then review recent joins  
+- **Cannot invite**  
+  You may not have permission to invite. Contact a workspace owner or admin
+
+## Related
+
+- [Billing and plans](/admin/billing)  
+- [Workspace](/admin/workspace)  
+- [Notifications](/account/notifications)
+```
+
 
 
