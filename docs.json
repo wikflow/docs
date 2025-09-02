@@ -68,6 +68,25 @@
       }
     ]
   },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "href": "https://docs.wikio.ai",
+        "icon": "book-open-cover"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://wikio.ai/community",
+        "icon": "slack"
+      },
+      {
+        "anchor": "Release notes",
+        "href": "/changelog",
+        "icon": "newspaper"
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -91,9 +110,5 @@
       "github": "https://github.com/wikioai",
       "linkedin": "https://linkedin.com/company/wikioai"
     }
-  },
-  "redirects": [
-    { "source": "/changelog", "destination": "/changelog/1-0" },
-    { "source": "/changelog/latest", "destination": "/changelog/1-0" }
-  ]
+  }
 }
