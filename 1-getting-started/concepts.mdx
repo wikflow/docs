@@ -1,64 +1,69 @@
 ---
-title: "Billing and plans"
-description: "Learn about plans, billing cycles, and how to manage your subscription in Wikio"
-sidebarTitle: "Billing and plans"
-icon: "credit-card"
+title: "Concepts"
+description: "Core building blocks of Wikio"
+sidebarTitle: "Concepts"
+mode: "wide"
+icon: "lightbulb"
+keywords: ['concepts', 'knowledge', 'architecture']
 ---
 
-## How our plans and billing work
+Wikio is organized around a set of core concepts. Understanding these will help you navigate the platform and structure your work effectively.
 
-### Plans
-Plans define which features and workflows are available in your workspace.  
-Check the **Pricing page** for the most up-to-date information.
+## User
+A **user** is an individual interacting with Wikio.  
+In the B2B context, every user belongs to an organization. Even solo users are tied to a company account for billing purposes.
 
-### Billing
-Billing applies at the **workspace level**. The organization that owns the workspace receives the invoice and must pay for active members.
+## Workspace
+A **workspace** represents an organization. It includes:  
+- Company billing details (VAT ID, address, payment information)  
+- A set of members and guests  
+- All projects, assets, and workflows belonging to the organization  
 
-- Charges are based on the number of unsuspended users (admins, members, and guests with access).  
-- You can choose between **monthly** and **yearly** billing.  
-- Your account is charged monthly for the number of users in your workspace.  
-- Adding users mid-month does not trigger an immediate charge; they will appear on the next invoice.  
-- Removing users mid-month does not generate a credit for the remainder of that cycle.  
+The workspace is the entity that receives invoices and manages subscriptions.
 
-Wikio also supports usage-based **credits** (for workflows such as transcription or translation) in some plans.
+## Team
+A **team** is a group of users collaborating on one or more projects.  
+- A user can belong to multiple teams.  
+- External collaborators can be invited, which may impact billing.  
 
-## Manage your billing
+## Project
+A **project** is the main unit of production.  
+Projects typically move from:  
+1. **Raw assets** (rushes, footage)  
+2. **Release candidates** (draft versions)  
+3. **Master release** (final video, in multiple formats for TV, web, or social)  
 
-Navigate to **Settings > Administration > Billing** to access your plan information and make updates.  
-From here, you can:  
+Each project contains:  
+- A project brief  
+- A timeline  
+- Potentially thousands of media files  
+- An associated client (internal or external)  
 
-- View or change your plan  
-- Update payment details (credit card, billing address)  
-- Update the billing email  
-- View billing history: past invoices and charges  
-- See if any charge is failed or overdue  
+## Client
+A **client** is the external party that commissions or receives the final project deliverable.  
 
-## Change or cancel a subscription
+## Item (Asset)
+An **item** (or asset) is a raw media file such as video footage.  
+- Items usually belong to one project but can be reused across projects.  
+- Once published, items become searchable and available for analytics.  
 
-Workspace admins can change or cancel a subscription under **Settings > Administration > Plans**.  
+## Workflow
+A **workflow** is a sequence of automated operations applied to media. Examples:  
+- Transcription  
+- Subtitling  
+- Translation  
+- Detecting forbidden words  
+- Suggesting scene cuts for time limits  
 
-- Changes take effect at the end of the billing period (end of month for monthly plans, end of year for annual).  
-- We do not provide partial refunds for mid-cycle cancellations.  
-- If you are not ready to commit to an annual plan, start monthly. You can upgrade to annual later to access discounted rates.  
+## Folders
+**Folders** can be used to automate recurring workflows.  
+- Files dropped into an input folder are processed automatically.  
+- Results appear in the output folder.  
+- APIs are available for deeper integration.  
 
-When cancelling a paid plan:  
+## Collections
+**Collections** are shared video libraries defined at the workspace level.  
+- They can be made visible to all members, e.g., for training purposes.  
+- Collections are searchable with AI-generated tags (e.g., “leadership under pressure,” “ERP setup”).  
 
-- No projects, assets, or users are deleted.  
-- The workspace reverts to the **Free plan**, which has limited features.  
-- All users in the workspace will have admin rights under the free plan.  
-
-## Add a VAT number
-
-To add a VAT number:  
-
-- During upgrade: select **“I’m purchasing as a business”** on the checkout page.  
-- For existing subscriptions: go to **Settings > Administration > Billing > Billing details > Edit**.  
-
-## Taxes
-
-Depending on your billing address, taxes may apply. The billing address you provide determines whether VAT or sales tax is applied and at what rate.  
-
-## Important notes
-
-- Plans apply to a single workspace. If your company operates multiple workspaces in the future, each will require its own subscription.  
-- Invite external collaborators carefully, as they also count towards billing.  
+---
