@@ -84,7 +84,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Open app",
       "href": "https://app.wikio.ai"
     }
   },
