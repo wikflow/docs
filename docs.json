@@ -54,13 +54,13 @@
             "group": "Concepts",
             "pages": [
               "concepts/user",
-              "concepts/workspace"
+              "concepts/workspace",
+              "concepts/asset"
             ]
           },
           {
             "group": "Troubleshooting",
             "pages": [
-              "issues/common-issues",
               "issues/report"
             ]
           }
