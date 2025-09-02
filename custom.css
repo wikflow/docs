@@ -1,4 +1,8 @@
 /* ===== Wikio docs – typography tuning (safe, reversible) ===== */
+/* Test rule – remove after confirming load */
+body {
+  background: pink !important;
+}
 
 /* Quick knobs (edit these first) */
 :root {
@@ -18,28 +22,21 @@ main, .prose, .markdown, .content, article {
   line-height: 1.6;
 }
 
-body { background: pink !important; }
-
-/* Headings – keep contrast while slightly smaller than defaults */
+/* Headings */
 .prose h1, article h1 { font-size: var(--wk-h1); line-height: 1.2; }
 .prose h2, article h2 { font-size: var(--wk-h2); margin-top: 1.6em; }
 .prose h3, article h3 { font-size: var(--wk-h3); margin-top: 1.2em; }
 
-/* Lists spacing (keeps bullets tidy at smaller sizes) */
+/* Lists */
 .prose ul li, .prose ol li { margin: 0.25rem 0; }
 
 /* Tables */
 .prose table { font-size: var(--wk-table); }
 .prose table th, .prose table td { padding: 0.5rem 0.65rem; }
 
-/* Inline code + code blocks */
-.prose code, code, kbd code {
-  font-size: var(--wk-code);
-}
-.prose pre, pre code {
-  font-size: var(--wk-code);
-  line-height: 1.5;
-}
+/* Code */
+.prose code, code, kbd code { font-size: var(--wk-code); }
+.prose pre, pre code { font-size: var(--wk-code); line-height: 1.5; }
 
 /* Keyboard keys */
 kbd {
@@ -52,26 +49,22 @@ kbd {
   background: color-mix(in oklab, Canvas, CanvasText 3%);
 }
 
-/* Callouts (Info/Warning/etc.) */
-.callout, .Callout, .admonition {
-  font-size: 0.95em; /* inherit but nudge down slightly */
-}
+/* Callouts */
+.callout, .Callout, .admonition { font-size: 0.95em; }
 
-/* Cards and Columns (feature grids) */
-.Card, .card {
-  font-size: 0.96em;
-}
+/* Cards */
+.Card, .card { font-size: 0.96em; }
 
-/* Left sidebar nav (works for most Mintlify themes) */
+/* Sidebar */
 aside nav, .sidebar, .Navigation, .DocsSidebar, .Sidebar {
   font-size: var(--wk-side);
   line-height: 1.4;
 }
 
-/* Small meta text (e.g., figure captions) */
+/* Small text */
 figcaption, .prose small, .meta { font-size: var(--wk-small); }
 
-/* Mobile: keep readability and spacing */
+/* Mobile */
 @media (max-width: 768px) {
   :root {
     --wk-body: 0.98rem;
@@ -82,7 +75,7 @@ figcaption, .prose small, .meta { font-size: var(--wk-small); }
   .prose h2 { font-size: clamp(1.25rem, 4.5vw, 1.45rem); }
 }
 
-/* Dark-mode friendly tweaks (no hard colors) */
+/* Dark-mode tweaks */
 @media (prefers-color-scheme: dark) {
   kbd { background: color-mix(in oklab, Canvas, CanvasText 6%); }
 }
