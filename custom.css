@@ -1,8 +1,5 @@
 /* ===== Wikio docs – typography tuning (safe, reversible) ===== */
-/* Test rule – remove after confirming load */
-body {
-  background: pink !important;
-}
+/* Test rule – This does not work */
 
 /* Quick knobs (edit these first) */
 :root {
