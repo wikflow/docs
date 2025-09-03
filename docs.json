@@ -68,6 +68,9 @@
       }
     ]
   },
+  "head": [
+    { "tag": "link", "attrs": { "rel": "stylesheet", "href": "/custom.css" } }
+  ],
   "global": {
     "anchors": [
       {
