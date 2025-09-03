@@ -112,6 +112,6 @@
     }
   },
   "styles": {
-    "css": "/custom.css"
+    "css": "/style.css"
   }
 }
