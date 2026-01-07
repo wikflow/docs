@@ -9,16 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "anchors": [
-      {
-        "label": "Wikio App",
-        "href": "https://app.wikio.ai"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:support@wikio.ai"
-      }
-    ],
     "tabs": [
       {
         "tab": "Documentation",
@@ -46,6 +36,7 @@
           {
             "group": "Features",
             "pages": [
+              "documentation/features/sharing",
               "features/search",
               "features/video-player"
             ]
