@@ -22,6 +22,15 @@
             ]
           },
           {
+            "group": "Concepts",
+            "pages": [
+              "concepts/user",
+              "concepts/workspace",
+              "concepts/asset",
+              "concepts/team"
+            ]
+          },
+          {
             "group": "Features",
             "pages": [
               "features/transcription",
@@ -32,15 +41,6 @@
               "features/comments",
               "features/sharing",
               "features/collections"
-            ]
-          },
-          {
-            "group": "Concepts",
-            "pages": [
-              "concepts/user",
-              "concepts/workspace",
-              "concepts/team",
-              "concepts/asset"
             ]
           },
           {
