@@ -18,27 +18,20 @@
             "pages": [
               "index",
               "welcome/start-guide",
-              "welcome/concepts",
-              "changelog"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "account/profile",
-              "account/preferences",
-              "account/notifications",
-              "admin/workspace",
-              "admin/billing",
-              "admin/members"
+              "welcome/concepts"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "documentation/features/sharing",
+              "features/transcription",
+              "features/subtitle",
+              "features/dubbing",
               "features/search",
-              "features/video-player"
+              "features/video-player",
+              "features/comments",
+              "features/sharing",
+              "features/collections"
             ]
           },
           {
@@ -46,13 +39,26 @@
             "pages": [
               "concepts/user",
               "concepts/workspace",
+              "concepts/team",
               "concepts/asset"
+            ]
+          },
+          {
+            "group": "Account & Admin",
+            "pages": [
+              "account/profile",
+              "account/preferences",
+              "account/notifications",
+              "admin/workspace",
+              "admin/billing",
+              "admin/members",
+              "admin/security"
             ]
           },
           {
             "group": "Troubleshooting",
             "pages": [
-              "issues/report"
+              "issues/common-issues"
             ]
           }
         ]

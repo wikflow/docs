@@ -1,0 +1,103 @@
+---
+title: "Security & Compliance"
+description: "How Wikio protects your data with encryption, access controls, SSO, audit logs, and compliance certifications."
+sidebarTitle: "Security"
+mode: "wide"
+icon: "shield-halved"
+keywords: ['security', 'compliance', 'encryption', 'SSO', 'GDPR', 'SOC 2', 'audit logs', 'data protection']
+---
+
+Wikio is built with enterprise-grade security so your media and data stay protected. This page covers how Wikio handles data protection, access controls, and compliance.
+
+## Data protection
+
+All data is protected in transit and at rest.
+
+| Layer | Detail |
+|---|---|
+| **In transit** | TLS 1.2+ encryption for all connections between your browser and Wikio servers |
+| **At rest** | AES-256 encryption for stored files and database records |
+| **Hosting** | Infrastructure hosted in EU data centers with SOC 2 certified providers |
+| **Backups** | Automated daily backups with geo-redundant storage |
+
+<Callout type="info">
+Media files are stored in isolated, workspace-specific storage buckets. No other workspace can access your files.
+</Callout>
+
+## Access controls
+
+Wikio uses a layered permission model to ensure people see only what they need.
+
+- **Workspace roles**: Owner, Admin, Member, and Guest—each with increasing restrictions. See [Members](/admin/members) for details.
+- **Team roles**: Team Admin, Editor, Reviewer, and Viewer control access within a team. See [Teams](/concepts/team).
+- **Item-level permissions**: Individual projects, assets, and collections can have their own sharing settings. See [Sharing & permissions](/features/sharing).
+
+Permissions are enforced on every API call, not just in the UI.
+
+## Single Sign-On (SSO)
+
+Enterprise workspaces can enable SSO so members authenticate through your identity provider.
+
+1. Go to **Settings > Security > SSO**.
+2. Choose your provider (Okta, Azure AD, Google Workspace, or any SAML 2.0 / OIDC provider).
+3. Enter the required configuration details (Entity ID, SSO URL, certificate).
+4. Enable SSO and optionally enforce it for all members.
+
+<Callout type="info">
+When SSO is enforced, members must sign in through your identity provider. Password-based login is disabled for all non-owner accounts.
+</Callout>
+
+## Audit logs
+
+Audit logs record key actions across your workspace so you can track who did what and when.
+
+Logged events include:
+
+- Member invitations and removals
+- Permission changes on projects, assets, and collections
+- Asset uploads, downloads, and deletions
+- Workspace and team settings changes
+- SSO configuration changes
+
+Access audit logs from **Settings > Security > Audit logs**. Filter by user, action type, or date range. Logs are retained for 12 months.
+
+## Sharing policies
+
+Admins can control how content is shared outside the workspace.
+
+- **Disable public links**: Prevent anyone from creating "Anyone with link" shares. Go to **Settings > Security > Sharing** and turn off public links.
+- **Restrict guest invitations**: Limit who can invite external guests, or disable guest access entirely.
+- **Require approval**: Optionally require admin approval before content is shared externally.
+
+See [Sharing & permissions](/features/sharing) for how sharing works at the item level.
+
+## Compliance
+
+Wikio maintains compliance certifications and follows industry standards for data handling.
+
+| Standard | Status |
+|---|---|
+| **SOC 2 Type II** | Certified—covers security, availability, and confidentiality |
+| **GDPR** | Compliant—EU data hosting, DPA available on request |
+| **ISO 27001** | In progress |
+
+For a copy of our SOC 2 report or to sign a Data Processing Agreement, contact [security@wikio.ai](mailto:security@wikio.ai).
+
+## Data retention and deletion
+
+- **Active data**: Stored as long as your workspace is active.
+- **Deleted assets**: Moved to trash and permanently deleted after 30 days.
+- **Account deletion**: Request full account and data deletion by contacting support. All data is purged within 30 days of the request.
+- **Workspace closure**: When a workspace is closed, all associated data is deleted within 30 days.
+
+<Callout type="warning">
+Permanent deletion is irreversible. Export any data you need before closing a workspace or emptying the trash.
+</Callout>
+
+## Best practices
+
+- **Enable SSO**: Centralizes authentication and reduces the risk of compromised passwords.
+- **Review permissions regularly**: Audit team membership and sharing settings quarterly.
+- **Use the principle of least privilege**: Give users the minimum access they need to do their work.
+- **Monitor audit logs**: Check logs periodically for unexpected access patterns or configuration changes.
+- **Disable public links for sensitive workspaces**: If your content is confidential, turn off "Anyone with link" sharing.

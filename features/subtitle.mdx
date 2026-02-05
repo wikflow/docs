@@ -6,3 +6,107 @@ mode: "wide"
 icon: "subtitles"
 keywords: ['subtitles', 'captions', 'translations', 'video']
 ---
+
+Subtitles make your videos accessible and searchable. Wikio generates subtitles automatically using AI transcription and lets you edit, translate, and export them in standard formats.
+
+![Studio panel showing Subtitle and other featured apps](/images/screenshots/tab-studio.png)
+
+## Generate subtitles
+
+Wikio can create subtitles from any video with spoken audio.
+
+<Steps>
+  <Step title="Select an asset">
+    Open the video you want to subtitle from your library or project.
+  </Step>
+  <Step title="Run the subtitle workflow">
+    Click **Workflows** and choose **Generate subtitles**. Select the spoken language if Wikio doesn't detect it automatically.
+  </Step>
+  <Step title="Review the result">
+    Once processing completes, subtitles appear in the timeline below the video player. Each segment shows the text and its timecode.
+  </Step>
+</Steps>
+
+<Callout type="info">
+Processing time depends on video length. You'll receive a notification when subtitles are ready.
+</Callout>
+
+## Edit subtitles
+
+Click any subtitle segment to edit its text. Changes save automatically.
+
+- **Split a segment**: Place the playhead where you want to divide, then click the split icon.
+- **Merge segments**: Select two adjacent segments and click merge.
+- **Adjust timing**: Drag the segment edges in the timeline or edit the timecode directly.
+- **Delete a segment**: Select it and press <kbd>Delete</kbd> or use the context menu.
+
+<Callout type="warning">
+Editing subtitles does not alter the original video file. Subtitles are stored separately and applied during playback or export.
+</Callout>
+
+## Translate subtitles
+
+Wikio can translate your subtitles into multiple languages.
+
+<Steps>
+  <Step title="Open subtitle settings">
+    With subtitles visible, click the **Languages** dropdown above the timeline.
+  </Step>
+  <Step title="Add a language">
+    Select **Add translation** and choose the target language.
+  </Step>
+  <Step title="Review and refine">
+    AI translation runs automatically. Review the translated segments and make adjustments where needed.
+  </Step>
+</Steps>
+
+You can maintain multiple language tracks for a single video. Viewers choose their preferred language in the player.
+
+## Sync adjustments
+
+If subtitles drift out of sync, use the player's offset controls:
+
+- <kbd>⌥ Alt</kbd> + <kbd>,</kbd> shifts subtitles earlier by 50 ms
+- <kbd>⌥ Alt</kbd> + <kbd>.</kbd> shifts subtitles later by 50 ms
+
+For larger corrections, select all segments and drag them together in the timeline.
+
+## Export subtitles
+
+Export subtitles for use in other platforms or for archival.
+
+1. Click **Export** in the subtitle panel.
+2. Choose a format:
+
+| Format | Use case |
+|---|---|
+| **SRT** | Most video players and platforms (YouTube, Vimeo) |
+| **VTT** | Web players and HTML5 video |
+| **STL** | Broadcast and professional workflows |
+| **Plain text** | Transcripts without timecodes |
+
+3. Click **Download** to save the file.
+
+## Burn-in subtitles
+
+To permanently embed subtitles into the video:
+
+1. Open the **Export** menu on the video asset.
+2. Enable **Burn-in subtitles** and select the language track.
+3. Choose your output format and resolution.
+4. Export the video.
+
+Burned-in subtitles cannot be turned off during playback but ensure compatibility with any player.
+
+## Best practices
+
+- **Review AI output**: Automated transcription handles most speech well, but review names, technical terms, and accents.
+- **Keep segments short**: Aim for one to two lines per segment so viewers can read comfortably.
+- **Use consistent styling**: If you customize fonts or colors, apply the same style across all videos for brand consistency.
+- **Translate early in the workflow**: Adding translations before client review lets stakeholders approve all language versions together.
+
+## Troubleshooting
+
+- **Subtitles not generating**: Ensure the video has audible speech. Silent or music-only videos won't produce results.
+- **Poor transcription accuracy**: Check that you selected the correct spoken language. Background noise can also affect quality.
+- **Sync issues after export**: Verify the export frame rate matches the original video.
