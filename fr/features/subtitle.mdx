@@ -1,0 +1,85 @@
+---
+title: "Sous-titres"
+description: "Generez, editez et traduisez des sous-titres avec l'IA. Personnalisez le timing, le style et exportez dans des formats standards."
+sidebarTitle: "Sous-titres"
+mode: "wide"
+icon: "language"
+keywords: ['sous-titres', 'legendes', 'traduction', 'SRT', 'VTT', 'incrustation']
+---
+
+Wikio transforme votre transcription en sous-titres temporises que vous pouvez modifier, traduire et exporter.
+
+## Generer des sous-titres
+
+<Steps>
+  <Step title="Verifier qu'une transcription existe">
+    Les sous-titres sont construits a partir de la transcription. Si l'asset n'en possede pas encore, lancez d'abord une [transcription](/features/transcription).
+  </Step>
+  <Step title="Ouvrir le panneau Sous-titres">
+    Selectionnez l'asset et cliquez sur **Sous-titres** dans le panneau de droite.
+  </Step>
+  <Step title="Choisir une langue">
+    Selectionnez la langue des sous-titres. Pour creer des sous-titres traduits, choisissez une langue differente de celle de la transcription.
+  </Step>
+  <Step title="Executer">
+    Cliquez sur **Generer**. L'IA cree des segments de sous-titres temporises et alignes sur l'audio.
+  </Step>
+</Steps>
+
+## Modifier les sous-titres
+
+Chaque segment de sous-titre affiche un champ de texte et une barre de timecode. Vous pouvez :
+
+- **Modifier le texte** -- cliquez pour reecrire ou corriger n'importe quel segment.
+- **Ajuster le timing** -- faites glisser la poignee de debut ou de fin sur la barre de timecode.
+- **Diviser / fusionner** -- decoupez un segment long ou combinez des segments courts.
+- **Reordonner** -- faites glisser les segments pour changer leur position.
+
+## Traduire
+
+Generez des sous-titres dans une nouvelle langue a partir d'une piste de sous-titres existante.
+
+<Steps>
+  <Step title="Ouvrir les Sous-titres">
+    Rendez-vous dans le panneau **Sous-titres** de l'asset.
+  </Step>
+  <Step title="Ajouter une langue">
+    Cliquez sur **Ajouter une langue** et selectionnez la langue cible.
+  </Step>
+  <Step title="Generer">
+    L'IA traduit et recale les sous-titres pour la nouvelle langue.
+  </Step>
+</Steps>
+
+<Callout type="info">
+Chaque traduction inclut un score de confiance IA afin que vous puissiez prioriser les segments qui pourraient necessiter une relecture manuelle.
+</Callout>
+
+## Synchronisation
+
+Si les sous-titres se desynchronisent, utilisez l'outil **Synchroniser** pour les realigner automatiquement avec l'audio.
+
+## Exporter
+
+| Format | Cas d'utilisation |
+|---|---|
+| **SRT** | Fichier de sous-titres universel pris en charge par la plupart des lecteurs. |
+| **VTT** | Format standard web avec options de style. |
+| **ASS** | Style avance pour des lecteurs specifiques. |
+| **TXT** | Texte brut sans timing. |
+
+## Incrustation
+
+Incrustez les sous-titres directement dans le fichier video pour qu'ils soient toujours visibles, quel que soit le lecteur.
+
+<Steps>
+  <Step title="Ouvrir les options d'export">
+    Cliquez sur **Exporter** sur la piste de sous-titres.
+  </Step>
+  <Step title="Selectionner Incrustation">
+    Choisissez **Incrustation** et personnalisez eventuellement la police, la taille et la position.
+  </Step>
+  <Step title="Telecharger">
+    La video avec les sous-titres incrustes sera disponible au telechargement une fois le traitement termine.
+  </Step>
+</Steps>

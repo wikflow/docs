@@ -1,0 +1,118 @@
+---
+title: "Ajouter un membre"
+description: "Invitez et gérez les membres de votre espace de travail. Envoyez des invitations par e-mail, autorisez les domaines d'entreprise ou partagez un lien d'inscription sécurisé."
+sidebarTitle: "Ajouter un membre"
+mode: "wide"
+icon: "users"
+keywords: ['membres', 'invitation', 'espace de travail', 'rôles', 'domaines approuvés', 'lien d\'invitation', 'facturation']
+---
+
+Invitez et gérez les membres de votre espace de travail.
+
+## Envoyer une invitation
+
+<Steps>
+  <Step title="Ouvrir Membres">
+    Accédez à **Paramètres → Administration → Membres**.
+  </Step>
+  <Step title="Cliquer sur Inviter">
+    Sélectionnez **Inviter** pour ouvrir la boîte de dialogue d'invitation.
+  </Step>
+  <Step title="Saisir les adresses e-mail">
+    Ajoutez une ou plusieurs adresses e-mail. Séparez les adresses multiples par des virgules.
+  </Step>
+  <Step title="Choisir le rôle">
+    Sélectionnez le rôle que les invités auront lorsqu'ils rejoindront l'espace de travail.
+  </Step>
+  <Step title="Sélectionner l'accès automatique (optionnel)">
+    Choisissez l'accès par défaut, comme les ressources ou dossiers qu'ils doivent voir en premier.
+  </Step>
+  <Step title="Envoyer les invitations">
+    Cliquez sur **Envoyer les invitations**. Les nouveaux membres reçoivent un e-mail avec un lien et les étapes pour rejoindre l'espace.
+  </Step>
+</Steps>
+
+<Callout type="info">
+Si votre serveur de messagerie filtre les invitations, ajoutez **notifications@wikio.ai** et **no-reply@wikio.ai** à votre liste autorisée.
+</Callout>
+
+## Qui peut inviter
+
+- Les propriétaires et administrateurs de l'espace de travail peuvent inviter de nouveaux membres par défaut
+- Les propriétaires peuvent restreindre les personnes autorisées à inviter depuis **Paramètres → Administration → Membres → Permissions**
+- Découvrez comment l'ajout ou la suppression de membres affecte la facturation dans [Facturation et forfaits](/admin/billing)
+
+## Domaines e-mail approuvés
+
+Permettez aux personnes disposant du domaine de votre entreprise de rejoindre l'espace sans invitation manuelle.
+
+<Steps>
+  <Step title="Ouvrir Sécurité">
+    Accédez à **Paramètres → Administration → Sécurité**.
+  </Step>
+  <Step title="Ajouter un domaine autorisé">
+    Ajoutez un ou plusieurs domaines, par exemple **exemple.com**.
+  </Step>
+  <Step title="Enregistrer">
+    Les personnes qui s'inscrivent avec une adresse correspondante peuvent rejoindre directement l'espace de travail.
+  </Step>
+</Steps>
+
+Remarques
+
+- Cela simplifie l'inscription mais n'empêche pas les utilisateurs de créer des espaces de travail séparés avec le même domaine
+- Vérifiez régulièrement la liste des domaines pour la maintenir à jour
+- Si vous transférez ou retirez un domaine, supprimez-le de la liste autorisée pour éviter tout accès non souhaité
+
+## Lien d'invitation
+
+Générez un lien unique qui permet aux personnes de rejoindre l'espace sans saisir les adresses e-mail une par une.
+
+<Steps>
+  <Step title="Ouvrir Sécurité">
+    Accédez à **Paramètres → Administration → Sécurité**.
+  </Step>
+  <Step title="Générer le lien">
+    Créez un lien d'invitation et copiez-le.
+  </Step>
+  <Step title="Partager avec précaution">
+    Partagez le lien uniquement au sein de votre organisation.
+  </Step>
+  <Step title="Désactiver une fois terminé">
+    Vous pouvez révoquer le lien à tout moment depuis le même écran.
+  </Step>
+</Steps>
+
+## Inviter et attribuer
+
+Vous pouvez préparer l'accès des invités avant qu'ils n'acceptent.
+
+- Les définir comme réviseurs sur des éléments sélectionnés
+- Les abonner à des flux de travail pour qu'ils reçoivent les mises à jour des tâches
+- Les ajouter aux règles de notification pour les ressources qu'ils suivront
+
+Une fois qu'ils ont rejoint l'espace, leurs attributions et abonnements sont actifs.
+
+## Gérer les membres
+
+Depuis **Paramètres → Administration → Membres**, vous pouvez :
+
+- Modifier le rôle d'un membre
+- Supprimer un membre
+- Renvoyer une invitation
+- Filtrer par statut : actif, en attente, suspendu
+
+## Dépannage
+
+- **Invitation non reçue**
+  Demandez à l'invité de vérifier les courriers indésirables ou la quarantaine et d'autoriser les e-mails provenant de **wikio.ai**
+- **Lien d'invitation partagé trop largement**
+  Révoquez le lien et générez-en un nouveau, puis vérifiez les inscriptions récentes
+- **Impossible d'inviter**
+  Vous n'avez peut-être pas la permission d'inviter. Contactez un propriétaire ou un administrateur de l'espace de travail
+
+## Liens connexes
+
+- [Facturation et forfaits](/admin/billing)
+- [Espace de travail](/admin/workspace)
+- [Notifications](/account/notifications)

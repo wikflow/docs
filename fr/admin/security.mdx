@@ -1,0 +1,103 @@
+---
+title: "Sécurité et conformité"
+description: "Comment Wikio protège vos données grâce au chiffrement, aux contrôles d'accès, au SSO, aux journaux d'audit et aux certifications de conformité."
+sidebarTitle: "Sécurité"
+mode: "wide"
+icon: "shield-halved"
+keywords: ['sécurité', 'conformité', 'chiffrement', 'SSO', 'GDPR', 'SOC 2', 'journaux d\'audit', 'protection des données']
+---
+
+Wikio est conçu avec une sécurité de niveau entreprise pour que vos médias et vos données restent protégés. Cette page explique comment Wikio gère la protection des données, les contrôles d'accès et la conformité.
+
+## Protection des données
+
+Toutes les données sont protégées en transit et au repos.
+
+| Couche | Détail |
+|---|---|
+| **En transit** | Chiffrement TLS 1.2+ pour toutes les connexions entre votre navigateur et les serveurs Wikio |
+| **Au repos** | Chiffrement AES-256 pour les fichiers stockés et les enregistrements de base de données |
+| **Hébergement** | Infrastructure hébergée dans des centres de données européens auprès de fournisseurs certifiés SOC 2 |
+| **Sauvegardes** | Sauvegardes quotidiennes automatiques avec stockage géo-redondant |
+
+<Callout type="info">
+Les fichiers médias sont stockés dans des compartiments de stockage isolés, propres à chaque espace de travail. Aucun autre espace de travail ne peut accéder à vos fichiers.
+</Callout>
+
+## Contrôles d'accès
+
+Wikio utilise un modèle de permissions par couches pour garantir que chacun ne voit que ce dont il a besoin.
+
+- **Rôles de l'espace de travail** : Propriétaire, Administrateur, Membre et Invité, chacun avec des restrictions croissantes. Voir [Membres](/admin/members) pour plus de détails.
+- **Rôles d'équipe** : Administrateur d'équipe, Éditeur, Réviseur et Lecteur contrôlent l'accès au sein d'une équipe. Voir [Équipes](/concepts/team).
+- **Permissions au niveau des éléments** : Les projets, ressources et collections individuels peuvent avoir leurs propres paramètres de partage. Voir [Partage et permissions](/features/sharing).
+
+Les permissions sont vérifiées à chaque appel API, pas uniquement dans l'interface utilisateur.
+
+## Authentification unique (SSO)
+
+Les espaces de travail entreprise peuvent activer le SSO pour que les membres s'authentifient via votre fournisseur d'identité.
+
+1. Accédez à **Paramètres > Sécurité > SSO**.
+2. Choisissez votre fournisseur (Okta, Azure AD, Google Workspace, ou tout fournisseur SAML 2.0 / OIDC).
+3. Saisissez les détails de configuration requis (Entity ID, URL SSO, certificat).
+4. Activez le SSO et, éventuellement, imposez-le à tous les membres.
+
+<Callout type="info">
+Lorsque le SSO est imposé, les membres doivent se connecter via votre fournisseur d'identité. La connexion par mot de passe est désactivée pour tous les comptes non-propriétaires.
+</Callout>
+
+## Journaux d'audit
+
+Les journaux d'audit enregistrent les actions clés à travers votre espace de travail afin que vous puissiez suivre qui a fait quoi et quand.
+
+Les événements enregistrés incluent :
+
+- Invitations et suppressions de membres
+- Modifications de permissions sur les projets, ressources et collections
+- Téléversements, téléchargements et suppressions de ressources
+- Modifications des paramètres de l'espace de travail et des équipes
+- Modifications de la configuration SSO
+
+Accédez aux journaux d'audit depuis **Paramètres > Sécurité > Journaux d'audit**. Filtrez par utilisateur, type d'action ou plage de dates. Les journaux sont conservés pendant 12 mois.
+
+## Politiques de partage
+
+Les administrateurs peuvent contrôler la manière dont le contenu est partagé en dehors de l'espace de travail.
+
+- **Désactiver les liens publics** : Empêchez quiconque de créer des partages "Toute personne disposant du lien". Accédez à **Paramètres > Sécurité > Partage** et désactivez les liens publics.
+- **Restreindre les invitations d'invités** : Limitez les personnes pouvant inviter des invités externes, ou désactivez entièrement l'accès invité.
+- **Exiger une approbation** : Exigez éventuellement l'approbation d'un administrateur avant que le contenu ne soit partagé à l'extérieur.
+
+Voir [Partage et permissions](/features/sharing) pour le fonctionnement du partage au niveau des éléments.
+
+## Conformité
+
+Wikio maintient des certifications de conformité et respecte les normes du secteur pour le traitement des données.
+
+| Norme | Statut |
+|---|---|
+| **SOC 2 Type II** | Certifié - couvre la sécurité, la disponibilité et la confidentialité |
+| **GDPR** | Conforme - hébergement des données dans l'UE, DPA disponible sur demande |
+| **ISO 27001** | En cours |
+
+Pour obtenir une copie de notre rapport SOC 2 ou signer un accord de traitement des données, contactez [security@wikio.ai](mailto:security@wikio.ai).
+
+## Conservation et suppression des données
+
+- **Données actives** : Conservées tant que votre espace de travail est actif.
+- **Ressources supprimées** : Déplacées dans la corbeille et définitivement supprimées après 30 jours.
+- **Suppression de compte** : Demandez la suppression complète de votre compte et de vos données en contactant le support. Toutes les données sont purgées dans les 30 jours suivant la demande.
+- **Fermeture de l'espace de travail** : Lorsqu'un espace de travail est fermé, toutes les données associées sont supprimées dans les 30 jours.
+
+<Callout type="warning">
+La suppression définitive est irréversible. Exportez toutes les données dont vous avez besoin avant de fermer un espace de travail ou de vider la corbeille.
+</Callout>
+
+## Bonnes pratiques
+
+- **Activer le SSO** : Centralise l'authentification et réduit le risque de mots de passe compromis.
+- **Vérifier régulièrement les permissions** : Auditez l'appartenance aux équipes et les paramètres de partage trimestriellement.
+- **Appliquer le principe du moindre privilège** : Accordez aux utilisateurs l'accès minimum nécessaire pour accomplir leur travail.
+- **Surveiller les journaux d'audit** : Consultez périodiquement les journaux pour détecter des schémas d'accès inhabituels ou des modifications de configuration.
+- **Désactiver les liens publics pour les espaces sensibles** : Si votre contenu est confidentiel, désactivez le partage "Toute personne disposant du lien".

@@ -1,0 +1,74 @@
+---
+title: "Utilisateurs"
+description: "Découvrez les rôles utilisateurs, les états de compte et ce que chaque niveau d'accès permet dans un espace de travail Wikio."
+sidebarTitle: "Utilisateurs"
+mode: "wide"
+icon: "user"
+keywords: ['utilisateur', 'rôles', 'permissions', 'accès', 'membre', 'invité', 'admin', 'propriétaire']
+---
+
+Chaque personne qui se connecte à Wikio possède un **compte utilisateur**. Au sein d'un espace de travail, chaque utilisateur se voit attribuer un **rôle** qui détermine ce qu'il peut voir et faire.
+
+## Rôles dans l'espace de travail
+
+| Rôle | Description |
+|---|---|
+| **Propriétaire** | Contrôle total sur l'espace de travail, y compris la facturation et la possibilité de le supprimer. Chaque espace de travail a au moins un propriétaire. |
+| **Admin** | Peut gérer les membres, les équipes et la plupart des paramètres. Ne peut pas modifier la facturation ni supprimer l'espace de travail. |
+| **Membre** | Peut créer et travailler avec des projets et des assets selon les permissions de l'équipe. |
+| **Invité** | Accès limité. Généralement invité à consulter ou commenter des éléments spécifiques. |
+
+## Ce que chaque rôle peut faire
+
+### Propriétaire
+- Tout ce qu'un Admin peut faire, plus :
+- Gérer la facturation et l'abonnement
+- Transférer ou supprimer l'espace de travail
+- Promouvoir d'autres utilisateurs au rôle de Propriétaire
+
+### Admin
+- Inviter et retirer des membres
+- Créer et gérer des équipes
+- Gérer les intégrations et les paramètres de l'espace de travail
+- Accéder à tous les projets et assets
+
+### Membre
+- Créer des projets et envoyer des assets
+- Utiliser les workflows IA (transcription, sous-titres, doublage)
+- Partager des éléments au sein de l'espace de travail
+- Commenter et collaborer sur les éléments partagés
+
+### Invité
+- Consulter les éléments auxquels il a été invité
+- Ajouter des commentaires lorsque cela est autorisé
+- Ne peut pas créer de projets ni envoyer d'assets
+
+## États du compte
+
+| État | Signification |
+|---|---|
+| **Actif** | Accès normal selon le rôle. |
+| **En attente** | Invité mais n'a pas encore accepté. |
+| **Suspendu** | Temporairement désactivé par un admin. Ne peut pas se connecter. |
+
+## Fonctions au niveau du projet
+
+Au sein d'un projet, les membres peuvent se voir attribuer des fonctions supplémentaires qui affinent leur accès :
+
+- **Admin du projet** — contrôle total sur le projet
+- **Éditeur** — peut modifier les assets et les workflows
+- **Réviseur** — peut consulter et commenter mais pas modifier
+- **Lecteur** — accès en lecture seule
+
+Ces fonctions se superposent au rôle de l'espace de travail. Un Membre de l'espace de travail qui est Admin du projet a un contrôle total à l'intérieur de ce projet, mais ne peut pas gérer les paramètres à l'échelle de l'espace de travail.
+
+## États des services
+
+Les fonctionnalités IA de Wikio suivent un cycle de vie simple :
+
+| État | Signification |
+|---|---|
+| **Actif** | La fonctionnalité est activée et disponible. |
+| **En cours** | Un workflow est en cours d'exécution. |
+| **Terminé** | Le workflow s'est terminé avec succès. |
+| **Échoué** | Un problème est survenu. Consultez le message d'erreur pour plus de détails. |
